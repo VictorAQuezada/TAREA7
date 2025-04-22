@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VehiculosApp.MainPage"
+             BackgroundColor="#F5F5F5">
+
+    <StackLayout Padding="20">
+
+        <Frame BorderColor="Orange"
+               CornerRadius="10"
+               HasShadow="True"
+               BackgroundColor="#1B1464"
+               Padding="15">
+            <Label Text="Vehículos en Venta"
+                   FontSize="26"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+        </Frame>
+
+        <SearchBar x:Name="vehicleSearchBar"
+                   Placeholder="Buscar vehículo por Marca y Tipo..."
+                   TextChanged="OnSearchTextChanged"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,15,0,10"
+                   BackgroundColor="White"
+                   TextColor="#333333"
+                   PlaceholderColor="Gray"/>
+
+        <CollectionView x:Name="vehiclesCollectionView"
+                        ItemsSource="{Binding Vehicles}"
+                        Margin="0,15,0,15">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal"
+                                   ItemSpacing="15"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame WidthRequest="340"
+                           HeightRequest="620"
+                           Padding="15"
+                           Margin="0,5,0,5" CornerRadius="15"
+                           HasShadow="True"
+                           BorderColor="#CCCCCC" BackgroundColor="White">
+
+                        <StackLayout Spacing="8">
+
+                            <Image Source="{Binding Imagen}"
+                                   WidthRequest="280"
+                                   HeightRequest="200"
+                                   Aspect="AspectFill"
+                                   Margin="0,0,0,10"/>
+
+                            <Image Source="{Binding Logo}"
+                                   WidthRequest="40"
+                                   HeightRequest="40"
+                                   HorizontalOptions="Center"
+                                   Aspect="AspectFit"/>
+
+                            <Label Text="{Binding Marca}"
+                                   FontSize="24"
+                                   HorizontalTextAlignment="Center"
+                                   FontAttributes="Bold"
+                                   TextColor="#1B1464"/>
+
+                            <Label Text="{Binding Modelo}"
+                                   FontSize="18"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="Gray"/>
+
+                            <Label Text="{Binding Caracteristicas}"
+                                   FontSize="14"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="#555555"
+                                   Margin="0,5,0,10"/>
+
+                            <Label Text="{Binding Tipo, StringFormat='Tipo: {0}'}"
+                                   FontSize="13"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="DarkSlateGray"/>
+                            <Label Text="{Binding Motor, StringFormat='Motor: {0}'}"
+                                   FontSize="13"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="DarkSlateGray"/>
+                            <Label Text="{Binding Combustible, StringFormat='Combustible: {0}'}"
+                                   FontSize="13"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="DarkSlateGray"/>
+                            <Label Text="{Binding Categoria, StringFormat='Categoría: {0}'}"
+                                   FontSize="13"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="DarkSlateGray"/>
+
+                            <StackLayout Margin="0,15,0,5">
+                                <Label Text="{Binding Precio_Venta, StringFormat='Precio Venta: ${0:N0}'}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       HorizontalTextAlignment="Center"
+                                       TextColor="ForestGreen"/>
+                                <Label Text="{Binding Precio_Compra, StringFormat='Precio Compra: ${0:N0}'}"
+                                       FontSize="14"
+                                       HorizontalTextAlignment="Center"
+                                       TextColor="DarkSeaGreen"/>
+                                <Label Text="{Binding Existencia, StringFormat='Existencia: {0}'}"
+                                       FontSize="13"
+                                       HorizontalTextAlignment="Center"
+                                       TextColor="Gray"
+                                       Margin="0,5,0,0"/>
+                            </StackLayout>
+
+                            <Button Text="Más detalles"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="EndAndExpand"
+                                    BackgroundColor="#1B1464"
+                                    TextColor="White"
+                                    CornerRadius="20"
+                                    Padding="15,5"
+                                    Margin="0,10,0,0"/>
+
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label Text="Victor Antonio Quezada Ramirez"
+               FontSize="16"           FontAttributes="Bold"   TextColor="#1B1464"   HorizontalOptions="Center"
+               Margin="0,25,0,10"/>
+    </StackLayout>
+</ContentPage>

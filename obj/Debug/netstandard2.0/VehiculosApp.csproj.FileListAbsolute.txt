@@ -1,0 +1,15 @@
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\VehiculosApp.csproj.AssemblyReference.cache
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\VehiculosApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\VehiculosApp.AssemblyInfoInputs.cache
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\VehiculosApp.AssemblyInfo.cs
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\VehiculosApp.csproj.CoreCompileInputs.cache
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\VehiculosApp.dll
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\refint\VehiculosApp.dll
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\VehiculosApp.pdb
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\bin\Debug\netstandard2.0\VehiculosApp.deps.json
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\bin\Debug\netstandard2.0\VehiculosApp.dll
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\bin\Debug\netstandard2.0\ref\VehiculosApp.dll
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\bin\Debug\netstandard2.0\VehiculosApp.pdb
+C:\Users\Shint\Desktop\APPS\VehiculosApp\VehiculosApp\obj\Debug\netstandard2.0\XamlC.stamp
